@@ -130,6 +130,12 @@ export default function Page() {
             We could not find any equipment matching your criteria. Please check
             back later.
           </p>
+            <button
+            onClick={() => refetch()}
+            className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl font-medium"
+          >
+            Refresh 
+          </button>
         </div>
       )}
 
