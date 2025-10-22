@@ -53,7 +53,7 @@ function Sidebar() {
         </div>
 
         {/* 🔹 Sidebar Menu */}
-        <ul className="space-y-2 pl-4 h-full w-full overflow-auto pb-28">
+        <ul className="space-y-2 pl-4 h-full w-full overflow-auto pb-40">
           {items?.map((item) => (
             <li key={item.id}>
               {item?.categories?.length > 0 ? (
@@ -115,7 +115,7 @@ function Sidebar() {
         </ul>
 
         {/* 🔹 Logout Button */}
-        <div className="absolute bottom-4 left-0 w-full px-4">
+        <div className="absolute bottom-0 left-0 w-full px-4">
           <button
             onClick={() => logout()}
             className="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold py-2 rounded-md shadow-md hover:from-red-700 hover:to-red-800 transition-all duration-300"

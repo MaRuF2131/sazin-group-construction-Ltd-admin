@@ -127,7 +127,7 @@ export default function Page() {
             No Equipment Found
           </h3>
           <p className="text-gray-600 dark:text-gray-400 text-lg mb-6">
-            We couldn't find any equipment matching your criteria. Please check
+            We could not find any equipment matching your criteria. Please check
             back later.
           </p>
         </div>
