@@ -150,6 +150,30 @@ const Sidebarlist={
           icon: <FaShieldAlt />, // Shield = Safety & Security
           path: '/sazin-construction/category/safety-security'
         },
+        {
+          id: 5,
+          title: "Agro",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/Agro'
+        },
+        {
+          id: 6,
+          title: "PWD",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/PWD'
+        },
+        {
+          id: 7,
+          title: "PGCB",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/PGCB'
+        },
+        {
+          id: 8,
+          title: "NHA",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/NHA'
+        },
       ]
     },
   
