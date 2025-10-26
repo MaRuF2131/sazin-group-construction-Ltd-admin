@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000/admin-action',
-/* baseURL: 'https://app-orbit-server-green.vercel.app', */ 
+  /* baseURL: 'http://localhost:5000/admin-action', */
+baseURL: 'https://sazin-group-construction-ltd-backen-iota.vercel.app/admin-action', 
   withCredentials: true
 });
 

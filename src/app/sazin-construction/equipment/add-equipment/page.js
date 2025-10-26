@@ -5,6 +5,7 @@ import { DangerousContentCheck } from '@/utils/custom-validation/CustomValidatio
 import axiosInstance from '@/utils/axios';
 const fields = [
   { name: "equipment", placeholder: "Equipment or Capability Name", label: "Equipment or Capability Name", type: "text", rules: { required: "Equipment or Capability Name is required", ...DangerousContentCheck } },
+  { name: "description", placeholder: "Equipment or Capability description", label: "Equipment or Capability description", type: "text", rules: { required: "Equipment or Capability description is required", ...DangerousContentCheck } },
 ];
 const onSubmit=async(data) => {
   try{

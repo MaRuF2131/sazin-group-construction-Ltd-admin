@@ -5,7 +5,7 @@ import { DangerousContentCheck, DateValidationCheck } from '@/utils/custom-valid
 import axiosInstance from '@/utils/axios';
 const fields = [
   {name:"title", placeholder:"Project title", label:"Project title",type:"text",rules: { required: "title is required",...DangerousContentCheck }},
-  {name:"category", label:"Project Type", type: "select",options:["Civil","Electro","Engineering-Procurement","Safe&Security","NHA","PGCB","PWD","Agro"] , rules: { required: "category is required" } },
+  {name:"category", label:"Project Type", type: "select",options:["Civil","Electro","Engineering-Procurement","Safe&Security","NHA","PGCB","PWD","BPC", "EED", "LGED","Agro"] , rules: { required: "category is required" } },
   {name:"date", label:"Complete On",type:"date",rules: { required: "Date is required",...DateValidationCheck }},
   {name:"feature", label:"Is Featured",type:"checkbox",rules: { required: "Date is required" }},
   {name:"description", placeholder:"Description", label:"Description", type: "textarea",  rules: { required: "Image is required" ,...DangerousContentCheck} },

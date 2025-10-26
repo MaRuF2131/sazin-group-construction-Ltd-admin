@@ -7,7 +7,7 @@ import ErrorCard from '@/components/ErrorCard';
 import Loader from '@/components/Loader';
 import { FaInfoCircle } from 'react-icons/fa';
 
-export default function QueryFunction({value ,ky}) {
+export default function QueryFunction({value ,ky, isFeature=''}) {
   const {
     data,
     fetchNextPage,
@@ -17,16 +17,13 @@ export default function QueryFunction({value ,ky}) {
     refetch
   } = useInfiniteQuery({
     queryKey: ["products",value,ky],
-    queryFn: ({ pageParam = 1 }) => fetchProducts(pageParam,value,ky ),
+    queryFn: ({ pageParam = 1 }) => fetchProducts(pageParam,value,ky ,isFeature ),
     getNextPageParam: (lastPage) => lastPage.nextPage,
     staleTime: 5 * 60 * 1000, // 5 minutes
     cacheTime: 10 * 1000, // 10 seconds
     refetchOnWindowFocus: false,
   });
-  useEffect(() => {
-    refetch();
-    console.log("Refetching data...", { value, ky });
-  }, [value, refetch, ky]);
+
 
   const loadMoreRef = useRef();
 

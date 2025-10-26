@@ -18,9 +18,6 @@ export default function Page() {
     refetch,
   } = DynamicQuery('certificate');
 
-  useEffect(() => {
-    refetch();
-  }, [refetch]);
 
   const loadMoreRef = useRef();
   const [updateData,setUpdateData]=useState(null);

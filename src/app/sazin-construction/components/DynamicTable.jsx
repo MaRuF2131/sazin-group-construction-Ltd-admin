@@ -31,13 +31,7 @@ export default function DynamicTable({value,ky,th,isFeature,path="project",field
     cacheTime: 10 * 1000, // 10 seconds
     refetchOnWindowFocus: false,
   });
-  useEffect(() => {
-    refetch();
-  }, [value, refetch, ky,isFeature]);
-  useEffect(()=>{
-      console.log("st",status);
-      
-  },[status])
+
 
   const loadMoreRef = useRef();
 

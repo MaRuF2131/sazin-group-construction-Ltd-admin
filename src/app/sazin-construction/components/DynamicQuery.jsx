@@ -50,9 +50,7 @@ function DynamicQuery(ky) {
     cacheTime: 10 * 1000, // 10 seconds
     refetchOnWindowFocus: false,
   });
-  useEffect(()=>{
-   refetch()
-},[ky])
+
   return (
     {
     data,

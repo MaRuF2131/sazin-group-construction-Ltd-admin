@@ -174,6 +174,24 @@ const Sidebarlist={
           icon: <FaShieldAlt />, // Shield = Safety & Security
           path: '/sazin-construction/category/NHA'
         },
+        {
+          id: 9,
+          title: "BPC",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/BPC'
+        },
+        {
+          id: 10,
+          title: "EED",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/EED'
+        },
+        {
+          id: 11,
+          title: "LGED",
+          icon: <FaShieldAlt />, // Shield = Safety & Security
+          path: '/sazin-construction/category/LGED'
+        },
       ]
     },
   

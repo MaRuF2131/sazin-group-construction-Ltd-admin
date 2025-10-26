@@ -16,9 +16,6 @@ export default function Page() {
     refetch
   } = DynamicQuery("news");
 
-  useEffect(() => {
-    refetch();
-  }, [refetch]);
 
   const loadMoreRef = useRef();
 
