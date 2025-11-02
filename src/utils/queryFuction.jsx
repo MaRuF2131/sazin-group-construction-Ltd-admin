@@ -16,7 +16,7 @@ export default function QueryFunction({value ,ky, isFeature=''}) {
     status,
     refetch
   } = useInfiniteQuery({
-    queryKey: ["products",value,ky],
+    queryKey: ["products",value,ky,isFeature],
     queryFn: ({ pageParam = 1 }) => fetchProducts(pageParam,value,ky ,isFeature ),
     getNextPageParam: (lastPage) => lastPage.nextPage,
     staleTime: 5 * 60 * 1000, // 5 minutes
